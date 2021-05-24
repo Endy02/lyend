@@ -1,16 +1,19 @@
 .navbar{
     height: var(--header-height);
-    padding: 0px 70px;
+    padding: 0px 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-shadow: var(--bottom-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
     background: linear-gradient(45deg,rgb(245, 103, 95),rgb(239, 67, 57));
 }
 .nav-logo{
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-family: 'Ubuntu bold';
     font-size: var(--large-text);
     color: white;
@@ -27,6 +30,7 @@
 .nav-link{
     text-decoration: none;
     padding: 4px 15px;
+    font-weight: 700;
     font-size: var(--medium-text);
     border-radius: 50px;
     color: white;
@@ -42,4 +46,82 @@
 .nav-link .active{
     background-color: white;
     color: var(--cream-red);
+}
+.nav-icon{
+    display: none;
+}
+.nav-link-mobile{
+    display: none;
+}
+.fa-bars{
+    color: white;
+}
+
+@media screen and (max-width: 960px) {
+    .btn-mobile{
+        display: none;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 90vh;
+        position: fixed;
+        top: var(--header-height);
+        left: -110%;
+        opacity: 1;
+        margin: 0;
+        padding: 50px 0px;
+        transition: all .3s ease-out;
+        background: linear-gradient(45deg,rgb(245, 103, 95),rgb(239, 67, 57));
+    }
+    .nav-list.active{
+        left: 0;
+        opacity: 1;
+        transition: all .3s ease;
+        z-index: 1;
+    }
+    .nav-icon{
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .nav-link-mobile{
+        display: block;
+        text-align: center;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        text-decoration: none;
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: white;
+        padding: 14px 20px;
+        border: 1px solid white;
+        transition: all .3s ease-out;
+    }
+    .nav-link-mobile:hover{
+        background: white;
+        color: var(--cream-red);
+        transition: 250ms;
+    }
+    .nav-item{
+        width: 50%;
+        padding: 0;
+        text-align: center;
+    }
+    .fa-times{
+        color: white;
+    }
+    .nav-link{
+        text-decoration: none;
+        padding: 8px 17px;
+        font-size: var(--large-text);
+        border-radius: 50px;
+        font-weight: bold;
+        color: white;
+        transition: all .2s ease-out;
+    }
 }
