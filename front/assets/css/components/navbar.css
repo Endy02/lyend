@@ -1,6 +1,6 @@
 .navbar{
     height: var(--header-height);
-    padding: 0px 50px;
+    padding: 5px 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,7 +43,7 @@
     transition: all .2s ease-in;
 }
 
-.nav-link .active{
+.nav-link.active{
     background-color: white;
     color: var(--cream-red);
 }
@@ -67,9 +67,9 @@
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        height: 90vh;
+        height: 80vh;
         position: fixed;
-        top: var(--header-height);
+        top: calc(var(--header-height) + 5px);
         left: -110%;
         opacity: 1;
         margin: 0;
@@ -82,6 +82,7 @@
         opacity: 1;
         transition: all .3s ease;
         z-index: 1;
+        cursor: none;
     }
     .nav-icon{
         display: block;
