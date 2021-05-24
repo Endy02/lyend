@@ -4,12 +4,13 @@ from .models import Artboard, Color, Category
 
 # Register your models here.
 
-class ColorAdmin(admin.ModelAdmin):
-    list_display= ('name', 'hex', 'rgb', 'created_at')
-    ordering = ("-created_at")
+class ColorAdmin(admin.TabularInline):
+    model = Color
+
 
 @admin.register(Artboard)
 class ArtboardAdmin(admin.ModelAdmin):
+    inlines=[ColorAdmin]
     list_display= ('name', 'category', 'created_at')
     ordering =("-created_at",)
     

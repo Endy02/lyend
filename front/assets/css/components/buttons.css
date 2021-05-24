@@ -1,0 +1,104 @@
+.btn{
+    width: max-content;
+    padding: 7px 20px;
+    font-size: var(--medium-text);
+    font-weight: bolder;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+}
+.btn-large{
+    width: max-content;
+    padding: 13px 30px;
+    font-size: var(--large-text);
+    font-weight: bolder;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-current{
+    background-color: var(--fun-blue);
+    color: var(--glow-white);
+    transition: all .3s ease-out;
+}
+.btn-current:hover,
+.btn-current:focus{
+    background-color: var(--freeze-yellow);
+    transition: all .3s ease-in-out;
+}
+.btn-great{
+    background-color: var(--freeze-yellow);
+    color: var(--glow-white);
+}
+.btn-great:hover,
+.btn-great:focus{
+    background-color: var(--fun-blue);
+    transition: all .3s ease-in;
+}
+
+.btn-cream{
+    background-color: var(--cream-red);
+    color: var(--glow-white);
+}
+.btn-cream:hover,
+.btn-cream:focus{
+    background-color: var(--sand-orange);
+    transition: all .3s ease-in-out;
+}
+
+.link{
+    text-decoration: none;
+    font-size: var(--medium-text);
+    letter-spacing: .5px;
+}
+.link-cream{
+    color: var(--cream-red);
+}
+.link-cream:hover,
+.link-cream:focus{
+    color: var(--dark-grey);
+    transition: all .3s ease-in;
+}
+.link-current{
+    color: var(--fun-blue);
+}
+.link-current:hover,
+.link-current:focus{
+    color: var(--cute-green);
+    transition: all .3s ease-in;
+}
+.link-great{
+    color: var(--cute-green);
+}
+.link-great:hover,
+.link-great:focus{
+    color: var(--fun-blue);
+    transition: all .3s ease-in;
+}
+.link-agree{
+    color: var(--sand-orange);
+}
+.link-agree:hover,
+.link-agree:focus{
+    color: var(--cute-green);
+    transition: all .3s ease-in;
+}
+.link-beaut{
+    color: var(--dark-grey);
+}
+.link-beaut:hover,
+.link-beaut:focus{
+    color: var(--cream-red);
+    transition: all .3s ease-in;
+}
+.link-glow{
+    color: var(--glow-white);
+}
+.link-glow:hover,
+.link-glow:focus{
+    color: var(--dark-grey);
+    transition: all .3s ease-in;
+}

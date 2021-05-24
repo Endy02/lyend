@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'artboard.apps.ArtboardConfig'
+    'artboard.apps.ArtboardConfig',
+    'front.apps.FrontConfig',
 ]
 
 MIDDLEWARE = [
@@ -119,13 +120,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/assets/'
+STATIC_URL = '/front/assets/'
 STATICFILES_DIRS = [
-    BASE_DIR / "assets",
+    BASE_DIR / "front/assets",
     #/var/www/static/,
     ]
-MEDIA_URL = '/images/'
-MEDIA_ROOT = BASE_DIR / "assets/images"
+MEDIA_URL = '/front/images/'
+MEDIA_ROOT = BASE_DIR / "front/assets/images"
 
 # LOGIN_URL = 'login'
 # LOGIN_REDIRECT_URL = 'home'

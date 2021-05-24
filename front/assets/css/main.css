@@ -1,0 +1,26 @@
+/* Global Variables */
+@import url(components/variables.css);
+@import url(components/fonts.css);
+@import url(components/buttons.css);
+
+/* Common components*/
+@import url(components/navbar.css);
+
+/* Responsive*/
+
+
+
+
+/* base Style */
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu regular';
+}
+
+#main{
+    height: 100%;
+}
