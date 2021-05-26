@@ -1,6 +1,8 @@
-from django.urls import path
-from . import views as artboard
+from rest_framework import routers
+from .api import ArtboardViewSet, ColorViewSet
 
-urlpatterns = [
-    path('api/artboards/',artboard.ArtboardView.as_view() , name="api-artboards"),
-]
+router = routers.DefaultRouter()
+router.register('artboards', ArtboardViewSet, 'artboards')
+router.register('colors', ColorViewSet, 'colors')
+
+urlpatterns = router.urls

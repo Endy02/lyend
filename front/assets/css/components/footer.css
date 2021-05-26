@@ -1,0 +1,11 @@
+.footer{
+    width: 100%;
+    height: var(--footer-height);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+}

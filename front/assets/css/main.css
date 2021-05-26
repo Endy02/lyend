@@ -1,10 +1,14 @@
 /* Global Variables */
 @import url(components/variables.css);
 @import url(components/fonts.css);
+@import url(components/container.css);
+@import url(components/modifier.css);
 @import url(components/buttons.css);
 
 /* Common components*/
 @import url(components/navbar.css);
+@import url(components/text.css);
+@import url(components/footer.css);
 
 /* Responsive*/
 
@@ -21,6 +25,6 @@ html, body{
     font-family: 'Ubuntu regular';
 }
 
-#main{
+#main, #root{
     height: 100%;
 }

@@ -1,7 +1,5 @@
 .btn{
     width: max-content;
-    padding: 7px 20px;
-    font-size: var(--medium-text);
     font-weight: bolder;
     border-radius: 50px;
     text-align: center;
@@ -9,14 +7,16 @@
     text-decoration: none;
 }
 .btn-large{
-    width: max-content;
     padding: 13px 30px;
     font-size: var(--large-text);
-    font-weight: bolder;
-    border-radius: 50px;
-    text-align: center;
-    border: none;
-    text-decoration: none;
+}
+.btn-medium{
+    padding: 6px 18px;
+    font-size: var(--medium-text);
+}
+.btn-small{
+    padding: 4px 10px;
+    font-size: var(--small-text);
 }
 
 .btn-current{

@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 
 const STYLES = ['btn-current','btn-great','btn-cream','btn-sand','btn-beaut']
 
-const SIZES = ['btn-small','btn-medium','btn-large']
+const SIZES = ['btn-medium', 'btn-small', 'btn-large']
 
 const Button = ({children, type, onClick, buttonStyle, buttonSize, link}) => {
 
     const checkStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0]
     
-    const checkSize = SIZES.includes(buttonSize)
+    const checkSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
 
     return (
         <Link to={link} className="btn-mobile">

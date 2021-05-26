@@ -36,7 +36,7 @@ const Navbar = () => {
                     <li className="nav-item"><NavLink to='/armony' activeClassName="active" className="nav-link" onClick={closeMobileMenu}>Armony</NavLink></li>
                     <li className="nav-item"><Link to='/sign-up' className="nav-link-mobile" onClick={closeMobileMenu}>Sign Up</Link></li>
                 </ul>
-                {button && <Button buttonStyle='btn-current' link='/sign-up'>Sign up</Button>}
+                {button && <Button buttonSize="btn-medium" buttonStyle='btn-current' link='/sign-up'>Sign up</Button>}
             </header>
         </>
     )

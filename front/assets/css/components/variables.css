@@ -6,10 +6,10 @@
     --glow-white: #f5fff8;
     --bottom-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     --top-shadow: 0 -3px 6px 0 rgba(0,0,0,0.16);
-    --giant-text: 1.758rem;
     --large-text: 1.258rem;
     --medium-text: .938rem;
     --small-text: .813rem;
     --x-small-text: .613rem;
-    --header-height: 9vh;
+    --header-height: 7vh;
+    --footer-height: 7vh;
 }

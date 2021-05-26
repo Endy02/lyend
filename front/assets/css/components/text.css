@@ -1,0 +1,33 @@
+.regular-text{
+    font-family: 'Ubuntu-Regular';
+}
+.bold-text{
+    font-family: 'Ubuntu bold';
+}
+.semi-bold{
+    font-family: 'Ubuntu medium';
+}
+.thin-text{
+    font-family: 'Ubuntu-Light';
+}
+.small-text{
+    font-size: var(--small-text);
+}
+.medium-text{
+    font-size: var(--medium-text);
+}
+.large-text{
+    font-size: var(--large-text);
+}
+.red-text{
+    color: var(--cream-red);
+}
+.blue-text{
+    color: var(--fun-blue);
+}
+.yellow-text{
+    color: var(--freeze-yellow);
+}
+.white-text{
+    color: var(--glow-white);
+}
