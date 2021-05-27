@@ -31,3 +31,6 @@
 .white-text{
     color: var(--glow-white);
 }
+.black-text{
+    color: var(--dark-grey)
+}

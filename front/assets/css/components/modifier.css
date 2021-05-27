@@ -3,3 +3,29 @@
     width: 4vh;
     height: 4vh;
 }
+
+/* Shapes */
+.circle{
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    box-shadow: var(--bottom-shadow);
+}
+
+/* commun */
+.full-gutter{
+    height: 100%;
+    width: 60%;
+    padding: 50px 0px;
+}
+.rounded{
+    height: max-content;
+    padding: 7px 16px;
+    border-radius: 10px;
+}
+.bordered{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 3px solid var(--dark-brown);
+}
