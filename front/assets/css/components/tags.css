@@ -1,0 +1,16 @@
+.tag{
+    width: max-content;
+    height: max-content;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: var(--medium-text);
+    font-weight: bolder;
+    border-radius: 10px;
+    line-height: 1.7em;
+    text-align: center;
+}
+
+.tag-sand{
+    background-color: var(--freeze-yellow);
+    color: var(--glow-white);
+}

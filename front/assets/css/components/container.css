@@ -62,6 +62,15 @@
     grid-template-areas:
         ". . .";
 }
+.grid-container-list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-template-areas: 
+        ". . . . .";
+}
 .gutter{
     padding: 0px 50px;
 }

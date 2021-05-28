@@ -8,9 +8,16 @@ export class plate extends Component {
 
     render() {
         const {colors} = this.props
+        const {size} = this.props
         return (
-            <div>
-                {console.log(colors)}
+            <div className="flex-row-center">
+                <div className="plate-wrapper">
+                    {colors.map(color => (
+                    <div key={color.id} className={size} style={{backgroundColor: color.hex}}>
+                        
+                    </div> 
+                    ))}
+                </div>
             </div>
         )
     }

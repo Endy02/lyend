@@ -22,11 +22,11 @@ export class ArtboardList extends React.Component {
 
         return (
             <>
-                <div className="flex-col-center">
+                <div className="grid-container-list">
                     {list.map(artboard => (
-                        <div key={artboard.id} className={object && this.props.object.id == artboard.id ? 'rounded bordered': 'rounded'} id={"artboard-"+artboard.id} onClick={() => this.handleSelect(artboard)}>
-                            <Plate colors={artboard.colors} />
-                            <p className="small-text bold-text black-text">{artboard.name}</p>
+                        <div key={artboard.id} className={object && this.props.object.id == artboard.id ? 'flex-col-center rounded bordered': 'flex-col-center rounded'} id={"artboard-"+artboard.id} onClick={() => this.handleSelect(artboard)}>
+                            <Plate colors={artboard.colors} size="plate"/>
+                            <p className="small-text bold-text black-text pad-t-s">{artboard.name}</p>
                         </div>
                     ))}
                 </div>
